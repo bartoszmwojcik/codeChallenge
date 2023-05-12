@@ -1,0 +1,171 @@
+cabal-version: 1.12
+
+-- This file has been generated from package.yaml by hpack version 0.34.4.
+--
+-- see: https://github.com/sol/hpack
+
+name:           fallingStars
+version:        0.1.0.0
+build-type:     Simple
+
+executable balls
+  main-is: bouncingBalls.hs
+  other-modules:
+      Paths_fallingStars
+  hs-source-dirs:
+      ./
+  build-depends:
+      GLFW-b
+    , GLUT
+    , OpenGL
+    , array
+    , base >=4.14 && <5
+    , gloss
+    , mtl
+    , random
+    , vector
+  default-language: Haskell2010
+
+executable carpet
+  main-is: carpet.hs
+  other-modules:
+      Paths_fallingStars
+  hs-source-dirs:
+      ./
+  build-depends:
+      GLFW-b
+    , GLUT
+    , OpenGL
+    , array
+    , base >=4.14 && <5
+    , gloss
+    , mtl
+    , random
+    , vector
+  default-language: Haskell2010
+
+executable ellipsoid
+  main-is: ellipsoid.hs
+  other-modules:
+      Paths_fallingStars
+  hs-source-dirs:
+      ./
+  build-depends:
+      GLFW-b
+    , GLUT
+    , OpenGL
+    , array
+    , base >=4.14 && <5
+    , gloss
+    , mtl
+    , random
+    , vector
+  default-language: Haskell2010
+
+executable fallingStars
+  main-is: fallingStars.hs
+  other-modules:
+      Paths_fallingStars
+  hs-source-dirs:
+      ./
+  build-depends:
+      GLFW-b
+    , GLUT
+    , OpenGL
+    , array
+    , base >=4.14 && <5
+    , gloss
+    , mtl
+    , random
+    , vector
+  default-language: Haskell2010
+
+executable fourier
+  main-is: fourier.hs
+  other-modules:
+      Paths_fallingStars
+  hs-source-dirs:
+      ./
+  build-depends:
+      GLFW-b
+    , GLUT
+    , OpenGL
+    , array
+    , base >=4.14 && <5
+    , gloss
+    , mtl
+    , random
+    , vector
+  default-language: Haskell2010
+
+executable gravity
+  main-is: gravity.hs
+  other-modules:
+      Paths_fallingStars
+  hs-source-dirs:
+      ./
+  build-depends:
+      GLFW-b
+    , GLUT
+    , OpenGL
+    , array
+    , base >=4.14 && <5
+    , gloss
+    , mtl
+    , random
+    , vector
+  default-language: Haskell2010
+
+executable snake
+  main-is: snake.hs
+  other-modules:
+      Paths_fallingStars
+  hs-source-dirs:
+      ./
+  build-depends:
+      GLFW-b
+    , GLUT
+    , OpenGL
+    , array
+    , base >=4.14 && <5
+    , gloss
+    , mtl
+    , random
+    , vector
+  default-language: Haskell2010
+
+executable sponge
+  main-is: sponge.hs
+  other-modules:
+      Paths_fallingStars
+  hs-source-dirs:
+      ./
+  build-depends:
+      GLFW-b
+    , GLUT
+    , OpenGL
+    , array
+    , base >=4.14 && <5
+    , gloss
+    , mtl
+    , random
+    , vector
+  default-language: Haskell2010
+
+executable triangle
+  main-is: triangle.hs
+  other-modules:
+      Paths_fallingStars
+  hs-source-dirs:
+      ./
+  build-depends:
+      GLFW-b
+    , GLUT
+    , OpenGL
+    , array
+    , base >=4.14 && <5
+    , gloss
+    , mtl
+    , random
+    , vector
+  default-language: Haskell2010

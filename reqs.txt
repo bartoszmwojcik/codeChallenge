@@ -1,0 +1,22 @@
+Program in Haskell following graphics:
+- on canvas 800x800
+- 800 elements 
+- Each element is represented by 3 coordinates: x, y, z
+- Each element moves with the time
+- Element starts its existence in random position (x,y) seleceted on the canvas 800x800 and with fix value z  equals 400
+- With time value z diminishes by 1. When z < 1 then values x,y are again randomly seleceted in accordance to given rules and valus z is set back to 400.
+- Values x and y of each element change according to the rule: x and y increase with time by x/z and y/z accordingly.
+- Each element is shown as a circle of radius equal to (401-z)/100+1
+- There is a reactive part: mouse moved to right increases speed of animation, mouse moved to the left decreases speed of animation.
+- Maximum and minimum speeds are defined and constant both.
+- Position (x,y) of each element on canvas is randomly selected from range (-400, 400).
+- Coordinate z acts as time, so we don't need to use time passed to updateWorld function. Any usage of it is superfluous.
+- when z < 1 then also again select randomly new values of x and y
+
+
+Program in Haskell following graphics:
+- a 3D box of side size 400 on canvas 800x800, slowly turning aroung its axe x.
+- box is solild, red, with black edges
+- pressing space put animation in pause
+- pressing F1 splits the box into 27 boxes, each of side size 3 times smaller. These boxes are red and have black edges too.
+- consecutive F1 splits existing boxes, each of them into 27 boxes in accordance to described rules.

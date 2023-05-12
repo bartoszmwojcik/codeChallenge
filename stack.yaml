@@ -1,0 +1,19 @@
+resolver: lts-18.17
+
+packages:
+- .
+
+extra-deps:
+- gloss-1.13.2.1
+- random-1.2.1
+- binary-0.8.9.1@sha256:81f468c1c75fd6535152ab69b2d32ac6cfcc03e345267b069abe4da56ec95801,6523
+- bytestring-0.10.12.1@sha256:82dba4c2de4fdd8b419ed28aec2c14cfe4a3f43d1d6e2263ab26962e7398048e,6254
+- text-1.2.5.0@sha256:791f0f6c97ed96113f17ab520cf0efe1a3a4f883a8c85910a5660567c8241c40,7895
+
+
+
+flags: {}
+
+extra-package-dbs: []
+
+
