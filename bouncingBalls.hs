@@ -1,3 +1,9 @@
+-- | Simulation of brownian motion.
+--   Simulation starts from one particle that moves in space limited by shown cube.
+--   F1 Key allows adding particles to the set. Particles bouncde from each other and from 
+--   walls of the cube.
+--   q - exit
+
 {-# LANGUAGE RecordWildCards #-}
 {-# LANGUAGE FlexibleContexts #-}
 
@@ -184,17 +190,12 @@ idle worldRef = do
 -- | First ball after collision.        
 bounceBalls :: Ball -> Ball -> Ball
 bounceBalls b1 b2 | center1 == center2          = b1 -- case of the same ball controlled against itself
---                  | ballsOvelap b1 b2        -- case balls overlap, the smaller should change velocity
---                    && ballRadius b1 < ballRadius b2 
---                                        = b1 { ballVelocity = negative $ ballVelocity b2 }
                   | ballsTouch b1 b2 &&
                     distanceDecreasing b1 b2    = b1 { ballVelocity = ballVelocity b2 }
                   | otherwise                   = b1
     where                  
         ballsTouch :: Ball -> Ball -> Bool
         ballsTouch b1 b2 = distance center1 center2 <= realToFrac (ballRadius b1 + ballRadius b2)
-        ballsOvelap b1 b2 = distance center1 center2 <= realToFrac (ballRadius b1)
-                        ||  distance center1 center2 <= realToFrac (ballRadius b2)
         center1 = ballPosition b1
         center2 = ballPosition b2
         distance :: (GLfloat, GLfloat, GLfloat) -> (GLfloat, GLfloat, GLfloat) -> GLfloat

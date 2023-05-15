@@ -1,3 +1,9 @@
+-- | shows ellipsoids
+--   F1 - new ellipsoid in set
+--   x,X,y,Y,z,Z - rotations
+--   +/- - distance change
+--   q - exit
+
 {-# LANGUAGE RecordWildCards #-}
 {-# LANGUAGE FlexibleContexts #-}
 

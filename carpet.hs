@@ -1,3 +1,6 @@
+-- | Sierpiński's Carpet
+--   SPACE - progres to the next generation
+
 import Graphics.Gloss
 import Graphics.Gloss.Data.ViewPort
 import Graphics.Gloss.Interface.IO.Game
