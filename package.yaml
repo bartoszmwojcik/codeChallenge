@@ -12,6 +12,7 @@ dependencies:
 - mtl
 - vector
 - JuicyPixels
+- containers
 
 executables:
   fallingStars:
@@ -29,9 +30,9 @@ executables:
   triangle:
     main: triangle.hs
     source-dirs: .
-  pyramid:
-    main: pyramid.hs
-    source-dirs: .
+#  pyramid:
+#    main: pyramid.hs
+#    source-dirs: .
   balls:
     main: bouncingBalls.hs
     source-dirs: .
@@ -43,4 +44,7 @@ executables:
     source-dirs: .
   fourier:
     main: fourier.hs
+    source-dirs: .
+  maze:
+    main: maze.hs
     source-dirs: .
